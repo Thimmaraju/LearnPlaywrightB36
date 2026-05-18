@@ -7,10 +7,10 @@ test('Verify Login with Valid credentials', async ({ page }) => {
 
 
   //enter the username 
-  await page.getByRole('textbox', { name: 'Username' }).fill('Admin');
+  await page.getByRole('textbox', { name: 'Username' }).fill(process.env.APP_USERNAME);
 
   //enter password 
-  await page.getByRole('textbox', { name: 'Password' }).fill('admin123');
+  await page.getByRole('textbox', { name: 'Password' }).fill(process.env.APP_PASSWORD);
 
 
   // click on login button
