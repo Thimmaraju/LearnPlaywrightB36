@@ -95,61 +95,86 @@
   },
   "suites": [
     {
-      "title": "PIM\\addemployee.spec.js",
-      "file": "PIM/addemployee.spec.js",
+      "title": "practicelogin.spec.js",
+      "file": "practicelogin.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Verify add employee with mandatory details",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Practice Test Login - Valid Credentials",
+          "file": "practicelogin.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "should successfully login with valid credentials",
+              "ok": false,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 5,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 16156,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-05-15T03:31:26.422Z",
+                  "timeout": 30000,
                   "annotations": [],
-                  "attachments": [
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\PIM-addemployee-Verify-add-employee-with-mandatory-details-chromium\\test-finished-1.png"
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 40064,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\LearnPlaywrightB36\\tests\\practicelogin.spec.js",
+                            "column": 16,
+                            "line": 6
+                          },
+                          "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://practicetestautomation.com/practice-test-login/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 4 |\u001b[39m   test(\u001b[32m'should successfully login with valid credentials'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m     \u001b[90m// Navigate to the login page\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://practicetestautomation.com/practice-test-login/'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m     \n \u001b[90m 8 |\u001b[39m     \u001b[90m// Verify the login page is loaded\u001b[39m\n \u001b[90m 9 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'Test Login | Practice Test Automation'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\practicelogin.spec.js:6:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-19T03:25:45.355Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\practicelogin-Practice-Tes-d8212-ogin-with-valid-credentials-chromium\\error-context.md"
+                        }
+                      ]
                     }
-                  ]
+                  ],
+                  "status": "unexpected"
                 }
               ],
-              "status": "expected"
+              "id": "1fbf92677aabbb7eae46-fbc99323310688a785d2",
+              "file": "practicelogin.spec.js",
+              "line": 4,
+              "column": 3
             }
-          ],
-          "id": "ec552fad52c4a8fd0817-5f023031372468d07e06",
-          "file": "PIM/addemployee.spec.js",
-          "line": 9,
-          "column": 5
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-15T03:31:19.087Z",
-    "duration": 23897.01799999969,
-    "expected": 1,
+    "startTime": "2026-05-19T03:25:41.339Z",
+    "duration": 45976.695999999996,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

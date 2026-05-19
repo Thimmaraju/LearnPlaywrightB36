@@ -1,0 +1,14 @@
+{
+  "textBoxData": {
+    "fullName": "Anusha",
+    "email": "abcd@gmail.com",
+    "currentAddress": "chennai",
+    "permanentAddress": "Bangalore"
+  },
+  "expectedResults": {
+    "name": "Name:RAju",
+    "email": "Email:abcd@gmail.com",
+    "currentAddress": "Current Address :chennai",
+    "permanentAddress": "Permananet Address :Bangalore"
+  }
+}

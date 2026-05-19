@@ -1,16 +1,19 @@
 import { test, expect } from '@playwright/test';
+import testData from '../testdata/demoqatextbox.json';
 
 test('Verify filling text', async ({ page }) => {
+  const { textBoxData, expectedResults } = testData;
+
   await page.goto('https://demoqa.com/text-box');
-  await page.getByRole('textbox', { name: 'Full Name' }).fill('Anusha');
-  await page.getByRole('textbox', { name: 'name@example.com' }).fill('abcd@gmail.com');
-  await page.getByRole('textbox', { name: 'Current Address' }).fill('chennai');
-  await page.locator('#permanentAddress').fill('Bangalore');
+  await page.getByRole('textbox', { name: 'Full Name' }).fill(textBoxData.fullName);
+  await page.getByRole('textbox', { name: 'name@example.com' }).fill(textBoxData.email);
+  await page.getByRole('textbox', { name: 'Current Address' }).fill(textBoxData.currentAddress);
+  await page.locator('#permanentAddress').fill(textBoxData.permanentAddress);
   await page.getByRole('button', { name: 'Submit' }).click();
-  await expect(page.getByText('Name:RAju')).toBeVisible();
-  await expect(page.getByText('Email:abcd@gmail.com')).toBeVisible();
-  await expect(page.getByText('Current Address :chennai')).toBeVisible();
-  await expect(page.getByText('Permananet Address :Bangalore')).toBeVisible();
+  await expect(page.getByText(expectedResults.name)).toBeVisible();
+  await expect(page.getByText(expectedResults.email)).toBeVisible();
+  await expect(page.getByText(expectedResults.currentAddress)).toBeVisible();
+  await expect(page.getByText(expectedResults.permanentAddress)).toBeVisible();
 });
 
 
