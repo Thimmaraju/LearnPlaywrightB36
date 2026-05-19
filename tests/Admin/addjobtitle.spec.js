@@ -8,11 +8,11 @@ test('Verify add jobtitle', async ({ page }) => {
 
   // Enter username 
 
-  await page.locator('input[name="username"]').fill(logindata.username)
+  await page.locator('input[name="username"]').fill(process.env.APP_USERNAME)
 
   // Enter Password 
 
-  await page.locator('[name="password"]').fill(logindata.password)
+  await page.locator('[name="password"]').fill(process.env.APP_PASSWORD)
 
   // click on login button 
 
