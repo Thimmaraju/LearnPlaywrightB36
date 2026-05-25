@@ -54,7 +54,7 @@ export default defineConfig({
 
     //headless : false,
 
-    //testIdAttribute: 
+     testIdAttribute : "name"
 
     
   },

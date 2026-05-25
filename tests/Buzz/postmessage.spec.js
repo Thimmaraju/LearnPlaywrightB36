@@ -13,3 +13,39 @@ test("postmessage", async ({page}) => {
 })
 
 //cypress supports only CSS 
+
+test("Indexing example", async ({page}) => {
+
+    await page.goto("/web/index.php/auth/login");
+    await page.locator('input[name="username"]').fill("Admin")
+    await page.locator('//input[@name="password"]').fill("admin123")
+    await page.locator('//button[@type="submit"]').click()
+   // await page.locator('.oxd-main-menu-item').first().click() // it will click on first matching element 
+
+   // await page.locator('.oxd-main-menu-item').last().click() // it will click on last matching element 
+
+    await page.locator('.oxd-main-menu-item').nth(3).click()
+
+    await  expect(page.getByText('Admin')).toBeVisible()
+
+})
+
+test("get by Label example", async ({page}) => {
+
+    
+    await page.goto("/web/index.php/auth/login");
+     await page.getByLabel('Username').fill("Admin")
+
+})
+
+
+test("get by Label example - 2 ", async ({page}) => {
+
+    
+    await page.goto("https://register.rediff.com/register/register.php?FormName=user_details");
+     await page.getByRole("")
+
+})
+
+
+

@@ -101,8 +101,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "postmessage",
-          "ok": true,
+          "title": "get by Label example - 2 ",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -113,31 +113,52 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 5,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 9866,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 30375,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB36\\tests\\Buzz\\postmessage.spec.js",
+                        "column": 49,
+                        "line": 46
+                      },
+                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Choose a Password')\u001b[22m\n\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \n \u001b[90m 45 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://register.rediff.com/register/register.php?FormName=user_details\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m      \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Choose a Password'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"Admin\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m\n \u001b[90m 48 |\u001b[39m })\n \u001b[90m 49 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\Buzz\\postmessage.spec.js:46:49\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-21T03:51:59.605Z",
+                  "startTime": "2026-05-25T03:43:03.901Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\Buzz-postmessage-postmessage-chromium\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\Buzz-postmessage-get-by-Label-example---2--chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\Buzz-postmessage-get-by-Label-example---2--chromium\\error-context.md"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "9d30323277fb1f0b0748-5ba0e5b241abcf97c490",
+          "id": "9d30323277fb1f0b0748-4b128cf8de01dc78aece",
           "file": "Buzz/postmessage.spec.js",
-          "line": 4,
+          "line": 42,
           "column": 5
         }
       ]
@@ -145,11 +166,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-21T03:51:55.097Z",
-    "duration": 15343.948000000004,
-    "expected": 1,
+    "startTime": "2026-05-25T03:42:59.560Z",
+    "duration": 34898.1540000001,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
