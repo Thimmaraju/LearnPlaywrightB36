@@ -18,7 +18,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
@@ -34,7 +34,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
@@ -50,7 +50,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
@@ -88,21 +88,21 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.59.1",
-    "workers": 1,
+    "workers": 3,
     "webServer": null
   },
   "suites": [
     {
-      "title": "Buzz\\postmessage.spec.js",
-      "file": "Buzz/postmessage.spec.js",
+      "title": "conditionaltesting.spec.js",
+      "file": "conditionaltesting.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "get by Label example - 2 ",
-          "ok": false,
+          "title": "check the checkbox based on status",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -113,52 +113,45 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30375,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
+                  "status": "passed",
+                  "duration": 3518,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "D:\\LearnPlaywrightB36\\tests\\Buzz\\postmessage.spec.js",
-                        "column": 49,
-                        "line": 46
-                      },
-                      "message": "Error: locator.fill: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Choose a Password')\u001b[22m\n\n\n\u001b[0m \u001b[90m 44 |\u001b[39m     \n \u001b[90m 45 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m\"https://register.rediff.com/register/register.php?FormName=user_details\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m      \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByLabel(\u001b[32m'Choose a Password'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m\"Admin\"\u001b[39m)\n \u001b[90m    |\u001b[39m                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m\n \u001b[90m 48 |\u001b[39m })\n \u001b[90m 49 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\Buzz\\postmessage.spec.js:46:49\u001b[22m"
+                      "text": "\u001b[33mfalse\u001b[39m\n"
                     }
                   ],
-                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-05-25T03:43:03.901Z",
+                  "startTime": "2026-05-29T03:43:10.368Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\Buzz-postmessage-get-by-Label-example---2--chromium\\test-failed-1.png"
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\conditionaltesting-check-the-checkbox-based-on-status-chromium\\test-finished-1.png"
                     },
                     {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\Buzz-postmessage-get-by-Label-example---2--chromium\\error-context.md"
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\conditionaltesting-check-the-checkbox-based-on-status-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\conditionaltesting-check-the-checkbox-based-on-status-chromium\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "9d30323277fb1f0b0748-4b128cf8de01dc78aece",
-          "file": "Buzz/postmessage.spec.js",
-          "line": 42,
+          "id": "755c260cb58bb34020f9-6bc55df22c52e6ef016d",
+          "file": "conditionaltesting.spec.js",
+          "line": 7,
           "column": 5
         }
       ]
@@ -166,11 +159,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-25T03:42:59.560Z",
-    "duration": 34898.1540000001,
-    "expected": 0,
+    "startTime": "2026-05-29T03:43:09.032Z",
+    "duration": 8685.418,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }

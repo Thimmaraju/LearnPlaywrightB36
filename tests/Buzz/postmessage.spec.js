@@ -3,9 +3,10 @@ import data from "../../testdata/buzzpost.json"
 
 test("postmessage", async ({page}) => {
 
+    const credentials = ["Admin", "admin123"]
     await page.goto("/web/index.php/auth/login");
-    await page.locator('input[name="username"]').fill("Admin")
-    await page.locator('//input[@name="password"]').fill("admin123")
+    await page.locator('input[name="username"]').fill(credentials[0])
+    await page.locator('//input[@name="password"]').fill(credentials[1])
     await page.locator('//button[@type="submit"]').click()
     await page.locator('(//a[@class="oxd-main-menu-item"])[last()]').click()
     await page.locator(`//textarea[@placeholder="What's on your mind?"]`).fill(data.text)

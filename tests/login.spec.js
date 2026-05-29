@@ -1,19 +1,25 @@
 import { test, expect } from '@playwright/test';
 
+let username = "Admin"
+
 test('Verify Login with Valid credentials', async ({ page }) => {
 
+  // let username = "Admin"
+  // let password = "admin123"
   //Launch url 
   await page.goto('/web/index.php/auth/login');
 
 
   //enter the username 
-  await page.getByRole('textbox', { name: 'Username' }).fill(process.env.APP_USERNAME);
+  await page.getByRole('textbox', { name: 'Username' }).fill(username);
 
   //enter password 
-  await page.getByRole('textbox', { name: 'Password' }).fill(process.env.APP_PASSWORD);
+  await page.getByRole('textbox', { name: 'Password' }).fill(password);
 
   await page.waitForTimeout(15000)
 
+
+  //username = "Raju"
 
   // click on login button
   await page.getByRole('button', { name: 'Login' }).click();
@@ -28,7 +34,7 @@ test("Verify login with valid username and invalid password ", async ({page}) =>
   //lauch url 
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
-  await page.getByRole('textbox', { name: 'Username' }).fill("Admin")
+  await page.getByRole('textbox', { name: 'Username' }).fill(username)
 
   await page.getByRole('textbox', { name: 'Password' }).fill("hewufbew")
 
