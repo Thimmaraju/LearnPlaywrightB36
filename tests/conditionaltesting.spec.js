@@ -1,8 +1,4 @@
-
-
 import {expect, test} from "@playwright/test";
-import { truncate } from "node:fs";
-
 
 test("check the checkbox based on status", async ({page}) => {
 
