@@ -1,10 +1,10 @@
 import { test, expect } from '@playwright/test';
 import { SauceDemoLoginPage } from '../pages/SauceDemoLoginPage';
-import testData from '../testdata/saucedemologin.json';
+import { standardUser } from '../testdata/jsobjectsdata.js';
 
 test('Verify login as standard user', async ({ page }) => {
   const loginPage = new SauceDemoLoginPage(page);
-  const credentials = testData.standardUser;
+  const credentials = standardUser;
 
   await loginPage.navigateTo();
   await loginPage.login(credentials.username, credentials.password);

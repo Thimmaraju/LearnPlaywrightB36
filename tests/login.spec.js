@@ -85,3 +85,24 @@ test("Verify login with invalid username and invalid password ", async ({page}) 
 
 
 })
+
+
+const  stu1 = "Vittal"
+
+test(`Verify login with invalid username - ${stu1} and invalid password `, async ({page}) =>{
+
+  //lauch url 
+  await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+
+  await page.getByRole('textbox', { name: 'Username' }).fill("Adghbhjigmin")
+
+  await page.getByRole('textbox', { name: 'Password' }).fill("fjghhgfyu")
+
+  await page.getByRole('button', { name: 'Login' }).click()
+
+  //assertion
+
+  await expect(page.getByText('Invalid credentials', { exact: true })).toBeVisible()
+
+
+})
