@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import logindata from "../../testdata/login.json"
 import { faker } from '@faker-js/faker';
+import { pressKey } from '../../Utils/utilities';
 
 test('Verify add jobtitle', async ({ page }) => {
 
@@ -20,7 +21,9 @@ test('Verify add jobtitle', async ({ page }) => {
   //or
   //click enter from keyboard 
 
-  await page.keyboard.press('Enter')
+  await pressKey(page, 'Enter')
+
+
 
   //complete url
 
