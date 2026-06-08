@@ -52,6 +52,7 @@ for (let title in jobtitles) {
     //await page.locator("//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@class='oxd-input oxd-input--active']").fill(faker.person.jobTitle())
 
     //  let r = (Math.random() + 1).toString(36).substring(7);
+    
     await page.locator("//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@class='oxd-input oxd-input--active']").fill(jobtitles[title])
 
     await page.waitForTimeout(4000)

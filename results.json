@@ -127,13 +127,13 @@
   },
   "suites": [
     {
-      "title": "Admin\\ddaddjobtitlearr.spec.js",
-      "file": "Admin/ddaddjobtitlearr.spec.js",
+      "title": "greencartprice.spec.js",
+      "file": "greencartprice.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify add jobtitle - QA I",
+          "title": "Verify total price is correct ",
           "ok": true,
           "tags": [],
           "tests": [
@@ -145,21 +145,21 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 19485,
+                  "duration": 5438,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-06T04:39:55.775Z",
+                  "startTime": "2026-06-08T03:11:51.888Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\Admin-ddaddjobtitlearr-Verify-add-jobtitle---QA-I-chromium\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\greencartprice-Verify-total-price-is-correct--chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -167,99 +167,19 @@
               "status": "expected"
             }
           ],
-          "id": "885c8bfd6b1d9d938e09-188e6829488e1dab6655",
-          "file": "Admin/ddaddjobtitlearr.spec.js",
-          "line": 9,
-          "column": 7
-        },
-        {
-          "title": "Verify add jobtitle - QA II",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 16483,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-06-06T04:40:15.435Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\Admin-ddaddjobtitlearr-Verify-add-jobtitle---QA-II-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "885c8bfd6b1d9d938e09-953ed073d68d063eb412",
-          "file": "Admin/ddaddjobtitlearr.spec.js",
-          "line": 9,
-          "column": 7
-        },
-        {
-          "title": "Verify add jobtitle - QA III",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 17213,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-06-06T04:40:31.985Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\Admin-ddaddjobtitlearr-Verify-add-jobtitle---QA-III-chromium\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "885c8bfd6b1d9d938e09-beb13f2bf5f660e4d7a2",
-          "file": "Admin/ddaddjobtitlearr.spec.js",
-          "line": 9,
-          "column": 7
+          "id": "0e3b40ed466e771b7634-a51d2008a26135fd644f",
+          "file": "greencartprice.spec.js",
+          "line": 4,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-06T04:39:50.566Z",
-    "duration": 58919.04600000009,
-    "expected": 3,
+    "startTime": "2026-06-08T03:11:47.026Z",
+    "duration": 10851.398000000045,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
