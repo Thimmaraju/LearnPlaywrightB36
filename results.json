@@ -127,13 +127,13 @@
   },
   "suites": [
     {
-      "title": "greencartprice.spec.js",
-      "file": "greencartprice.spec.js",
+      "title": "testextraction.spec.js",
+      "file": "testextraction.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify total price is correct ",
+          "title": "Verify Login with Valid credentials",
           "ok": true,
           "tags": [],
           "tests": [
@@ -145,21 +145,67 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 5438,
+                  "duration": 23129,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "Step 1: Launch URL\n"
+                    },
+                    {
+                      "text": "Step 2: Extract username text\n"
+                    },
+                    {
+                      "text": "Username text: Username : Admin\n"
+                    },
+                    {
+                      "text": "Parsed username array: [ \u001b[32m'Username'\u001b[39m, \u001b[32m':'\u001b[39m, \u001b[32m'Admin'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Step 3: Extract password text\n"
+                    },
+                    {
+                      "text": "Password text: Password : admin123\n"
+                    },
+                    {
+                      "text": "Parsed password array: [ \u001b[32m'Password'\u001b[39m, \u001b[32m':'\u001b[39m, \u001b[32m'admin123'\u001b[39m ]\n"
+                    },
+                    {
+                      "text": "Step 4: Enter the username\n"
+                    },
+                    {
+                      "text": "Step 5: Enter the password\n"
+                    },
+                    {
+                      "text": "Step 6: Wait for 15 seconds\n"
+                    },
+                    {
+                      "text": "Step 7: Click on login button\n"
+                    },
+                    {
+                      "text": "Step 8: Verify Time at Work is visible\n"
+                    },
+                    {
+                      "text": "Step 9: Extract menu items\n"
+                    },
+                    {
+                      "text": "Menu items: [\n  \u001b[32m'Admin'\u001b[39m,       \u001b[32m'PIM'\u001b[39m,\n  \u001b[32m'Leave'\u001b[39m,       \u001b[32m'Time'\u001b[39m,\n  \u001b[32m'Recruitment'\u001b[39m, \u001b[32m'My Info'\u001b[39m,\n  \u001b[32m'Performance'\u001b[39m, \u001b[32m'Dashboard'\u001b[39m,\n  \u001b[32m'Directory'\u001b[39m,   \u001b[32m'Maintenance'\u001b[39m,\n  \u001b[32m'Claim'\u001b[39m,       \u001b[32m'Buzz'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "Step 10: Verify PIM menu item exists\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-08T03:11:51.888Z",
+                  "startTime": "2026-06-09T02:53:05.486Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\greencartprice-Verify-total-price-is-correct--chromium\\test-finished-1.png"
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\testextraction-Verify-Login-with-Valid-credentials-chromium\\test-finished-1.png"
                     }
                   ]
                 }
@@ -167,8 +213,8 @@
               "status": "expected"
             }
           ],
-          "id": "0e3b40ed466e771b7634-a51d2008a26135fd644f",
-          "file": "greencartprice.spec.js",
+          "id": "f9220f29e0d539380778-3033be65c3372265f2a6",
+          "file": "testextraction.spec.js",
           "line": 4,
           "column": 5
         }
@@ -177,8 +223,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-08T03:11:47.026Z",
-    "duration": 10851.398000000045,
+    "startTime": "2026-06-09T02:53:01.732Z",
+    "duration": 28889.185999999994,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

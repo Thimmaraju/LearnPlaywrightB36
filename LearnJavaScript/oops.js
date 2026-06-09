@@ -6,12 +6,6 @@
 
 
 
-//OOPS 
-// Abstraction 
-// Encapsulation 
-// Inheritance 
-// Polymorphism 
-// prototyping 
 
 
 
@@ -33,45 +27,56 @@
 //     methods 
 // }
 
-//object / Instance of the class
+// //object / Instance of the class
 
-class calc {
+// class calc {
 
-    x = 30 
+//     x = 30 
 
-    y = 45
+//     y = 45
 
-    stuname = "Guru"
+//     stuname = "Guru"
 
-    add(n1, n2) {
+//     add(n1, n2) {
 
-        console.log(n1 + n2)
-    }
+//         console.log(n1 + n2)
+//     }
 
-     raju(n1, n2) {
+//      raju(n1, n2) {
 
-        console.log(n1 * n2)
+//         console.log(n1 * n2)
 
-    }
-
-
-     devide(n1, n2) {
-
-        console.log(n1 / n2)
-    }
-} 
+//     }
 
 
-const cal1 = new calc()
+//      devide(n1, n2) {
 
-cal1.add(6,9)
+//         console.log(n1 / n2)
+//     }
+// } 
 
-console.log(cal1.x)
 
-console.log(cal1.stuname)  // "Guru"
+// const cal1 = new calc()
 
-cal1.raju(9,4)
+// cal1.add(6,9)
+
+// console.log(cal1.x)
+
+// console.log(cal1.stuname)  // "Guru"
+
+// cal1.raju(9,4)
 
 // constructor 
 // this
 // static 
+
+
+// class classname{
+
+//     v
+//     m
+// }
+
+// const obj = new classname()
+
+
