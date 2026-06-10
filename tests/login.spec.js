@@ -7,7 +7,7 @@ test('Verify Login with Valid credentials', async ({ page }) => {
   let username = "Admin"
   let password = "admin123"
   //Launch url 
-  await page.goto('/web/index.php/auth/login');
+ await page.goto('/web/index.php/auth/login')
 
 
   //enter the username 
