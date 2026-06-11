@@ -18,7 +18,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
@@ -34,7 +34,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
@@ -50,7 +50,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
@@ -66,7 +66,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
@@ -82,7 +82,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
@@ -120,113 +120,369 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.59.1",
-    "workers": 1,
+    "workers": 3,
     "webServer": null
   },
   "suites": [
     {
-      "title": "testextraction.spec.js",
-      "file": "testextraction.spec.js",
+      "title": "plframework.spec.js",
+      "file": "plframework.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Verify Login with Valid credentials",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Group 1",
+          "file": "plframework.spec.js",
+          "line": 3,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "test case 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 23129,
-                  "errors": [],
-                  "stdout": [
+                  "timeout": 30000,
+                  "annotations": [
                     {
-                      "text": "Step 1: Launch URL\n"
-                    },
-                    {
-                      "text": "Step 2: Extract username text\n"
-                    },
-                    {
-                      "text": "Username text: Username : Admin\n"
-                    },
-                    {
-                      "text": "Parsed username array: [ \u001b[32m'Username'\u001b[39m, \u001b[32m':'\u001b[39m, \u001b[32m'Admin'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "Step 3: Extract password text\n"
-                    },
-                    {
-                      "text": "Password text: Password : admin123\n"
-                    },
-                    {
-                      "text": "Parsed password array: [ \u001b[32m'Password'\u001b[39m, \u001b[32m':'\u001b[39m, \u001b[32m'admin123'\u001b[39m ]\n"
-                    },
-                    {
-                      "text": "Step 4: Enter the username\n"
-                    },
-                    {
-                      "text": "Step 5: Enter the password\n"
-                    },
-                    {
-                      "text": "Step 6: Wait for 15 seconds\n"
-                    },
-                    {
-                      "text": "Step 7: Click on login button\n"
-                    },
-                    {
-                      "text": "Step 8: Verify Time at Work is visible\n"
-                    },
-                    {
-                      "text": "Step 9: Extract menu items\n"
-                    },
-                    {
-                      "text": "Menu items: [\n  \u001b[32m'Admin'\u001b[39m,       \u001b[32m'PIM'\u001b[39m,\n  \u001b[32m'Leave'\u001b[39m,       \u001b[32m'Time'\u001b[39m,\n  \u001b[32m'Recruitment'\u001b[39m, \u001b[32m'My Info'\u001b[39m,\n  \u001b[32m'Performance'\u001b[39m, \u001b[32m'Dashboard'\u001b[39m,\n  \u001b[32m'Directory'\u001b[39m,   \u001b[32m'Maintenance'\u001b[39m,\n  \u001b[32m'Claim'\u001b[39m,       \u001b[32m'Buzz'\u001b[39m\n]\n"
-                    },
-                    {
-                      "text": "Step 10: Verify PIM menu item exists\n"
+                      "type": "fail",
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB36\\tests\\plframework.spec.js",
+                        "line": 8,
+                        "column": 14
+                      }
                     }
                   ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-06-09T02:53:05.486Z",
-                  "annotations": [],
-                  "attachments": [
+                  "expectedStatus": "failed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\testextraction-Verify-Login-with-Valid-credentials-chromium\\test-finished-1.png"
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 17,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m7\u001b[39m\nReceived: \u001b[31m5\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m7\u001b[39m\nReceived: \u001b[31m5\u001b[39m\n    at D:\\LearnPlaywrightB36\\tests\\plframework.spec.js:12:19",
+                        "location": {
+                          "file": "D:\\LearnPlaywrightB36\\tests\\plframework.spec.js",
+                          "column": 19,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"This is test case 1 \"\u001b[39m)\n \u001b[90m 11 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m         expect(\u001b[35m5\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m7\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m     })\n \u001b[90m 15 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "D:\\LearnPlaywrightB36\\tests\\plframework.spec.js",
+                            "column": 19,
+                            "line": 12
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m7\u001b[39m\nReceived: \u001b[31m5\u001b[39m\n\n\u001b[0m \u001b[90m 10 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m\"This is test case 1 \"\u001b[39m)\n \u001b[90m 11 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m         expect(\u001b[35m5\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[35m7\u001b[39m)\n \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m     })\n \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\plframework.spec.js:12:19\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "This is test case 1 \n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-11T04:07:58.949Z",
+                      "annotations": [
+                        {
+                          "type": "fail",
+                          "location": {
+                            "file": "D:\\LearnPlaywrightB36\\tests\\plframework.spec.js",
+                            "line": 8,
+                            "column": 14
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\plframework-Group-1-test-case-1-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\plframework-Group-1-test-case-1-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "D:\\LearnPlaywrightB36\\tests\\plframework.spec.js",
+                        "column": 19,
+                        "line": 12
+                      }
                     }
-                  ]
+                  ],
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "2a554f4accece72c09c9-f72e90c7b485748b71b6",
+              "file": "plframework.spec.js",
+              "line": 6,
+              "column": 9
+            },
+            {
+              "title": "test case 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "This is test case 2 \n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-11T04:07:59.131Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\plframework-Group-1-test-case-2-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a554f4accece72c09c9-501556a7de014cdca9ba",
+              "file": "plframework.spec.js",
+              "line": 17,
+              "column": 9
+            },
+            {
+              "title": "test case 3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "fixme",
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB36\\tests\\plframework.spec.js",
+                        "line": 26,
+                        "column": 14
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 12,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-11T04:07:59.236Z",
+                      "annotations": [
+                        {
+                          "type": "fixme",
+                          "location": {
+                            "file": "D:\\LearnPlaywrightB36\\tests\\plframework.spec.js",
+                            "line": 26,
+                            "column": 14
+                          }
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\plframework-Group-1-test-case-3-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2a554f4accece72c09c9-fa08f7835800616a9c4d",
+              "file": "plframework.spec.js",
+              "line": 24,
+              "column": 9
+            },
+            {
+              "title": "test case 4",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "This is test case 4 \n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-11T04:07:59.325Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\plframework-Group-1-test-case-4-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a554f4accece72c09c9-09c1ec920c7370a70daf",
+              "file": "plframework.spec.js",
+              "line": 33,
+              "column": 9
             }
-          ],
-          "id": "f9220f29e0d539380778-3033be65c3372265f2a6",
-          "file": "testextraction.spec.js",
-          "line": 4,
-          "column": 5
+          ]
+        },
+        {
+          "title": "Group 2",
+          "file": "plframework.spec.js",
+          "line": 44,
+          "column": 6,
+          "specs": [
+            {
+              "title": "test case 5",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 26,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "This is test case 5 \n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-11T04:07:59.414Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\plframework-Group-2-test-case-5-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a554f4accece72c09c9-bb0130e2f38c174b671e",
+              "file": "plframework.spec.js",
+              "line": 47,
+              "column": 9
+            },
+            {
+              "title": "test case 6",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "This is test case 6 \n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-11T04:07:59.566Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\plframework-Group-2-test-case-6-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2a554f4accece72c09c9-54b7a8849b2f13364fa4",
+              "file": "plframework.spec.js",
+              "line": 54,
+              "column": 9
+            }
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-09T02:53:01.732Z",
-    "duration": 28889.185999999994,
-    "expected": 1,
-    "skipped": 0,
+    "startTime": "2026-06-11T04:07:57.852Z",
+    "duration": 1934.4729999999997,
+    "expected": 5,
+    "skipped": 1,
     "unexpected": 0,
     "flaky": 0
   }
