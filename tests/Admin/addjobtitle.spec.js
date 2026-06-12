@@ -3,7 +3,7 @@ import logindata from "../../testdata/login.json"
 import { faker } from '@faker-js/faker';
 import { pressKey } from '../../Utils/utilities';
 
-test('Verify add jobtitle', async ({ page }) => {
+test('Verify add jobtitle',{tag: "@smoke"}, async ({ page }) => {
 
    await page.goto(`/web/index.php/auth/login`)
 

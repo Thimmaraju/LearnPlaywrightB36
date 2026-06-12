@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 
-test('Verify total price is correct ', async ({ page }) => {
+test('Verify total price is correct ',{tag: ["@smoke", "@payment"]}, async ({ page }) => {
 
     await page.goto('https://rahulshettyacademy.com/seleniumPractise/#/')
 

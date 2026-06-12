@@ -4,12 +4,17 @@ let username = "Admin"
 
 test.describe("verify login functionality ", () => {
 
-  test.only('Verify Login with Valid credentials', async ({ page }) => {
+  test.beforeEach(async ({page}) =>{
+      
+       await page.goto('/web/index.php/auth/login')
+  })
+
+  test('Verify Login with Valid credentials',{tag: "@smoke"}, async ({ page }) => {
 
     let username = "Admin"
     let password = "admin123"
     //Launch url 
-    await page.goto('/web/index.php/auth/login')
+
 
 
     //enter the username 
@@ -33,9 +38,6 @@ test.describe("verify login functionality ", () => {
 
   test("Verify login with valid username and invalid password ", async ({ page }) => {
 
-    //lauch url 
-    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
-
     await page.getByRole('textbox', { name: 'Username' }).fill(username)
 
     await page.getByRole('textbox', { name: 'Password' }).fill("hewufbew")
@@ -51,9 +53,6 @@ test.describe("verify login functionality ", () => {
 
 
   test("Verify login with invalid username and valid password ", async ({ page }) => {
-
-    //lauch url 
-    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
     await page.getByRole('textbox', { name: 'Username' }).fill("Adghbhjigmin")
 
@@ -72,8 +71,6 @@ test.describe("verify login functionality ", () => {
 
   test("Verify login with invalid username and invalid password ", async ({ page }) => {
 
-    //lauch url 
-    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
     await page.getByRole('textbox', { name: 'Username' }).fill("Adghbhjigmin")
 
@@ -92,9 +89,6 @@ test.describe("verify login functionality ", () => {
   const stu1 = "Vittal"
 
   test(`Verify login with invalid username - ${stu1} and invalid password `, async ({ page }) => {
-
-    //lauch url 
-    await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
     await page.getByRole('textbox', { name: 'Username' }).fill("Adghbhjigmin")
 

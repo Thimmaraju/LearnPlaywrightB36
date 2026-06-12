@@ -1,15 +1,33 @@
 import { test, expect } from '@playwright/test';
 
-test.describe("Group 1", () => {
+
+test.describe("Group 1",{tag: "@grouptag"}, () => {
+
+     test.afterAll(() => {
+
+        console.log("After all tests")
+    })
+    test.beforeAll(() => {
+
+        console.log("Before all tests")
+    })
+
+    test.beforeEach(() => {
+
+        console.log("Before Each test")
+    })
+
+
+    test.afterEach(() => {
+
+        console.log("After Each test")
+    })
+
 
 
     test("test case 1", () => {
 
-        test.fail()
-
         console.log("This is test case 1 ")
-
-        expect(5).toBe(7)
 
     })
 
@@ -22,8 +40,6 @@ test.describe("Group 1", () => {
 
 
     test("test case 3", () => {
-
-        test.fixme()
 
         console.log("This is test case 3 ")
 
@@ -42,6 +58,8 @@ test.describe("Group 1", () => {
 
 
 test.describe("Group 2", () => {
+
+   
 
 
     test("test case 5", () => {
