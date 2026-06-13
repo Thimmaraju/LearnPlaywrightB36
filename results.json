@@ -63,244 +63,141 @@
   },
   "suites": [
     {
-      "title": "plframework.spec.js",
-      "file": "plframework.spec.js",
+      "title": "addemployee.spec.js",
+      "file": "addemployee.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Group 1",
-          "file": "plframework.spec.js",
-          "line": 4,
-          "column": 6,
-          "specs": [
+          "title": "Verify add employee with Mandatory details ",
+          "ok": false,
+          "tags": [],
+          "tests": [
             {
-              "title": "test case 1",
-              "ok": true,
-              "tags": [
-                "grouptag"
-              ],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 46300,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js:17:6",
+                    "location": {
+                      "file": "D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js",
+                      "column": 6,
+                      "line": 17
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m \u001b[36mlet\u001b[39m addemp\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m{\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     login \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m loginPage(page)\n \u001b[90m 20 |\u001b[39m     dashborad \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m dashboardPage(page)\u001b[0m"
+                  },
+                  "errors": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 10,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Before all tests\n"
-                        },
-                        {
-                          "text": "Before Each test\n"
-                        },
-                        {
-                          "text": "This is test case 1 \n"
-                        },
-                        {
-                          "text": "After Each test\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-12T03:57:25.290Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\LearnPlaywrightB36\\test-results\\plframework-Group-1-test-case-1-chromium\\trace.zip"
-                        }
-                      ]
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js",
+                        "column": 6,
+                        "line": 17
+                      },
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 15 |\u001b[39m \u001b[36mlet\u001b[39m addemp\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m{\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     login \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m loginPage(page)\n \u001b[90m 20 |\u001b[39m     dashborad \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m dashboardPage(page)\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js:17:6\u001b[22m"
+                    },
+                    {
+                      "location": {
+                        "file": "D:\\LearnPlaywrightB36\\pages\\loginpage.po.js",
+                        "column": 25,
+                        "line": 19
+                      },
+                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\loginpage.po.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36masync\u001b[39m launchApp() {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/web/index.php/auth/login'\u001b[39m)\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m         \n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m\u001b[0m\n\u001b[2m    at loginPage.launchApp (D:\\LearnPlaywrightB36\\pages\\loginpage.po.js:19:25)\u001b[22m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js:23:17\u001b[22m"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2a554f4accece72c09c9-f72e90c7b485748b71b6",
-              "file": "plframework.spec.js",
-              "line": 28,
-              "column": 9
-            },
-            {
-              "title": "test case 2",
-              "ok": true,
-              "tags": [
-                "grouptag"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-13T06:28:19.787Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Before Each test\n"
-                        },
-                        {
-                          "text": "This is test case 2 \n"
-                        },
-                        {
-                          "text": "After Each test\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-12T03:57:25.566Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\LearnPlaywrightB36\\test-results\\plframework-Group-1-test-case-2-chromium\\trace.zip"
-                        }
-                      ]
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\addemployee-Verify-add-employee-with-Mandatory-details--chromium\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\addemployee-Verify-add-employee-with-Mandatory-details--chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\addemployee-Verify-add-employee-with-Mandatory-details--chromium\\trace.zip"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2a554f4accece72c09c9-501556a7de014cdca9ba",
-              "file": "plframework.spec.js",
-              "line": 35,
-              "column": 9
-            },
-            {
-              "title": "test case 3",
-              "ok": true,
-              "tags": [
-                "grouptag"
-              ],
-              "tests": [
+                  "errorLocation": {
+                    "file": "D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js",
+                    "column": 6,
+                    "line": 17
+                  }
+                },
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 32843,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 22,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Before Each test\n"
-                        },
-                        {
-                          "text": "This is test case 3 \n"
-                        },
-                        {
-                          "text": "After Each test\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-12T03:57:25.665Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\LearnPlaywrightB36\\test-results\\plframework-Group-1-test-case-3-chromium\\trace.zip"
-                        }
-                      ]
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "message": "Error: apiRequestContext._wrapApiCall: file data stream has unexpected number of bytes"
+                    },
+                    {
+                      "message": "Error: End of central directory record signature not found. Either not a zip file, or file is truncated."
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2a554f4accece72c09c9-fa08f7835800616a9c4d",
-              "file": "plframework.spec.js",
-              "line": 42,
-              "column": 9
-            },
-            {
-              "title": "test case 4",
-              "ok": true,
-              "tags": [
-                "grouptag"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-06-13T06:29:14.695Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Before Each test\n"
-                        },
-                        {
-                          "text": "This is test case 4 \n"
-                        },
-                        {
-                          "text": "After Each test\n"
-                        },
-                        {
-                          "text": "After all tests\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-12T03:57:25.836Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\LearnPlaywrightB36\\test-results\\plframework-Group-1-test-case-4-chromium\\trace.zip"
-                        }
-                      ]
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\addemployee-Verify-add-employee-with-Mandatory-details--chromium-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\addemployee-Verify-add-employee-with-Mandatory-details--chromium-retry1\\error-context.md"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "id": "2a554f4accece72c09c9-09c1ec920c7370a70daf",
-              "file": "plframework.spec.js",
-              "line": 49,
-              "column": 9
+              "status": "unexpected"
             }
-          ]
+          ],
+          "id": "93ad582b5901ab13ff0d-1e253d2203d75f30f51d",
+          "file": "addemployee.spec.js",
+          "line": 30,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-12T03:57:18.932Z",
-    "duration": 7138.105,
-    "expected": 4,
+    "startTime": "2026-06-13T06:28:18.696Z",
+    "duration": 94281.31000000001,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

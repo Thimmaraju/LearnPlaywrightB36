@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import testData from '../testdata/demoqatextbox.json';
+import testData from '../../testdata/demoqatextbox.json';
 
 
 //for (let i = 0; i < 3; i++) {

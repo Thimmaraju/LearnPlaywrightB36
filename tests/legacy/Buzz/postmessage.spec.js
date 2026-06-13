@@ -1,5 +1,5 @@
 import {expect, test} from "@playwright/test";
-import data from "../../testdata/buzzpost.json"
+import data from "../../../testdata/buzzpost.json"
 
 test("postmessage", async ({page}) => {
 

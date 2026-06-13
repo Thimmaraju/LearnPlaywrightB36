@@ -1,13 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { SauceDemoLoginPage } from '../pages/SauceDemoLoginPage';
-import { standardUser } from '../testdata/jsobjectsdata.js';
-
-standardUser["automation"] = true
-console.log(standardUser.username)
-
-standardUser.automation
-
-delete standardUser.password
+import { SauceDemoLoginPage } from '../../pages/SauceDemoLoginPage.js';
+import { standardUser } from '../../testdata/jsobjectsdata.js';
 
 test('Verify login as standard user', async ({ page }) => {
   const loginPage = new SauceDemoLoginPage(page);
@@ -31,6 +24,12 @@ test('Verify filling text', async ({ page }) => {
 });
 
 test('Verify login error with invalid credentials', async ({ page }) => {
+  const loginPage = new SauceDemoLoginPage(page);
+  await loginPage.navigateTo();
+});
+
+
+test('Raju test', async ({ page }) => {
   const loginPage = new SauceDemoLoginPage(page);
   await loginPage.navigateTo();
 });
