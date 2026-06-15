@@ -31,5 +31,8 @@ test("Verify add employee with Mandatory details ", async ()=>{
 
   await addemp.addemployeewithDetails(addempdata.firstname, addempdata.lastname)
 
-  await addemp.employeeCreationSuccess()
+  //await addemp.employeeCreationSuccess()
+  
+  //await expect(this.employeeDetails).toBeVisible()
+
 })

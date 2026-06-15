@@ -18,7 +18,7 @@
       {
         "outputDir": "D:/LearnPlaywrightB36/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -56,20 +56,20 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.59.1",
-    "workers": 3,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "addemployee.spec.js",
-      "file": "addemployee.spec.js",
+      "title": "wwe\\checkboxex2.spec.js",
+      "file": "wwe/checkboxex2.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify add employee with Mandatory details ",
+          "title": "Verify Radio button",
           "ok": false,
           "tags": [],
           "tests": [
@@ -81,111 +81,60 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 6,
                   "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 46300,
+                  "status": "failed",
+                  "duration": 10886,
                   "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js:17:6",
+                    "message": "Error: locator.uncheck: Cannot uncheck radio button. Radio buttons can only be unchecked by selecting another radio button in the same group.\nCall log:\n\u001b[2m  - waiting for locator('input[value=\"radio1\"]')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" value=\"radio1\" name=\"radioButton\" class=\"radioButton\"/>\u001b[22m\n",
+                    "stack": "Error: locator.uncheck: Cannot uncheck radio button. Radio buttons can only be unchecked by selecting another radio button in the same group.\nCall log:\n\u001b[2m  - waiting for locator('input[value=\"radio1\"]')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" value=\"radio1\" name=\"radioButton\" class=\"radioButton\"/>\u001b[22m\n\n    at D:\\LearnPlaywrightB36\\tests\\wwe\\checkboxex2.spec.js:60:51",
                     "location": {
-                      "file": "D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js",
-                      "column": 6,
-                      "line": 17
+                      "file": "D:\\LearnPlaywrightB36\\tests\\wwe\\checkboxex2.spec.js",
+                      "column": 51,
+                      "line": 60
                     },
-                    "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m \u001b[36mlet\u001b[39m addemp\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m{\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     login \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m loginPage(page)\n \u001b[90m 20 |\u001b[39m     dashborad \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m dashboardPage(page)\u001b[0m"
+                    "snippet": "\u001b[0m \u001b[90m 58 |\u001b[39m\n \u001b[90m 59 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[value=\"radio1\"]'\u001b[39m)\u001b[33m.\u001b[39muncheck()\n \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m })\u001b[0m"
                   },
                   "errors": [
                     {
                       "location": {
-                        "file": "D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js",
-                        "column": 6,
-                        "line": 17
+                        "file": "D:\\LearnPlaywrightB36\\tests\\wwe\\checkboxex2.spec.js",
+                        "column": 51,
+                        "line": 60
                       },
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 15 |\u001b[39m \u001b[36mlet\u001b[39m addemp\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({page}) \u001b[33m=>\u001b[39m{\n \u001b[90m    |\u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     login \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m loginPage(page)\n \u001b[90m 20 |\u001b[39m     dashborad \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m dashboardPage(page)\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js:17:6\u001b[22m"
-                    },
-                    {
-                      "location": {
-                        "file": "D:\\LearnPlaywrightB36\\pages\\loginpage.po.js",
-                        "column": 25,
-                        "line": 19
-                      },
-                      "message": "Error: page.goto: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\loginpage.po.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36masync\u001b[39m launchApp() {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/web/index.php/auth/login'\u001b[39m)\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m         \n \u001b[90m 21 |\u001b[39m     }\n \u001b[90m 22 |\u001b[39m\u001b[0m\n\u001b[2m    at loginPage.launchApp (D:\\LearnPlaywrightB36\\pages\\loginpage.po.js:19:25)\u001b[22m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js:23:17\u001b[22m"
+                      "message": "Error: locator.uncheck: Cannot uncheck radio button. Radio buttons can only be unchecked by selecting another radio button in the same group.\nCall log:\n\u001b[2m  - waiting for locator('input[value=\"radio1\"]')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" value=\"radio1\" name=\"radioButton\" class=\"radioButton\"/>\u001b[22m\n\n\n\u001b[0m \u001b[90m 58 |\u001b[39m\n \u001b[90m 59 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[value=\"radio1\"]'\u001b[39m)\u001b[33m.\u001b[39muncheck()\n \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m })\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\wwe\\checkboxex2.spec.js:60:51\u001b[22m"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-13T06:28:19.787Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\addemployee-Verify-add-employee-with-Mandatory-details--chromium\\video.webm"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\addemployee-Verify-add-employee-with-Mandatory-details--chromium\\error-context.md"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\addemployee-Verify-add-employee-with-Mandatory-details--chromium\\trace.zip"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "D:\\LearnPlaywrightB36\\tests\\addemployee.spec.js",
-                    "column": 6,
-                    "line": 17
-                  }
-                },
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 32843,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "message": "Error: apiRequestContext._wrapApiCall: file data stream has unexpected number of bytes"
-                    },
-                    {
-                      "message": "Error: End of central directory record signature not found. Either not a zip file, or file is truncated."
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-06-13T06:29:14.695Z",
+                  "startTime": "2026-06-15T03:59:32.623Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\addemployee-Verify-add-employee-with-Mandatory-details--chromium-retry1\\test-failed-1.png"
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-checkboxex2-Verify-Radio-button-chromium\\test-failed-1.png"
                     },
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\addemployee-Verify-add-employee-with-Mandatory-details--chromium-retry1\\error-context.md"
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-checkboxex2-Verify-Radio-button-chromium\\error-context.md"
                     }
-                  ]
+                  ],
+                  "errorLocation": {
+                    "file": "D:\\LearnPlaywrightB36\\tests\\wwe\\checkboxex2.spec.js",
+                    "column": 51,
+                    "line": 60
+                  }
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "93ad582b5901ab13ff0d-1e253d2203d75f30f51d",
-          "file": "addemployee.spec.js",
-          "line": 30,
+          "id": "891f6cacac5a1f1a78be-8579d730ca028d4719dd",
+          "file": "wwe/checkboxex2.spec.js",
+          "line": 52,
           "column": 5
         }
       ]
@@ -193,8 +142,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-13T06:28:18.696Z",
-    "duration": 94281.31000000001,
+    "startTime": "2026-06-15T03:59:29.226Z",
+    "duration": 15034.53799999971,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,
