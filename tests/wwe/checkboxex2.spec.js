@@ -64,3 +64,13 @@ test('Verify Radio button', async ({ page }) => {
 
 
 })
+
+
+test('Verify Drop down', async ({ page }) => {
+
+
+      await page.goto('https://rahulshettyacademy.com/AutomationPractice/')
+
+      await page.locator('#dropdown-class-example').selectOption('option2')
+
+})

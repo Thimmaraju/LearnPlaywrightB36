@@ -63,87 +63,91 @@
   },
   "suites": [
     {
-      "title": "wwe\\checkboxex2.spec.js",
-      "file": "wwe/checkboxex2.spec.js",
+      "title": "wwe\\iframes.spec.js",
+      "file": "wwe/iframes.spec.js",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Verify Radio button",
-          "ok": false,
-          "tags": [],
-          "tests": [
+          "title": "Automation - Working With Elements",
+          "file": "wwe/iframes.spec.js",
+          "line": 2,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "Working with Iframes",
+              "ok": false,
+              "tags": [
+                "smoke",
+                "raju"
+              ],
+              "tests": [
                 {
-                  "workerIndex": 6,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 10886,
-                  "error": {
-                    "message": "Error: locator.uncheck: Cannot uncheck radio button. Radio buttons can only be unchecked by selecting another radio button in the same group.\nCall log:\n\u001b[2m  - waiting for locator('input[value=\"radio1\"]')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" value=\"radio1\" name=\"radioButton\" class=\"radioButton\"/>\u001b[22m\n",
-                    "stack": "Error: locator.uncheck: Cannot uncheck radio button. Radio buttons can only be unchecked by selecting another radio button in the same group.\nCall log:\n\u001b[2m  - waiting for locator('input[value=\"radio1\"]')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" value=\"radio1\" name=\"radioButton\" class=\"radioButton\"/>\u001b[22m\n\n    at D:\\LearnPlaywrightB36\\tests\\wwe\\checkboxex2.spec.js:60:51",
-                    "location": {
-                      "file": "D:\\LearnPlaywrightB36\\tests\\wwe\\checkboxex2.spec.js",
-                      "column": 51,
-                      "line": 60
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 58 |\u001b[39m\n \u001b[90m 59 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[value=\"radio1\"]'\u001b[39m)\u001b[33m.\u001b[39muncheck()\n \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m })\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "D:\\LearnPlaywrightB36\\tests\\wwe\\checkboxex2.spec.js",
-                        "column": 51,
-                        "line": 60
-                      },
-                      "message": "Error: locator.uncheck: Cannot uncheck radio button. Radio buttons can only be unchecked by selecting another radio button in the same group.\nCall log:\n\u001b[2m  - waiting for locator('input[value=\"radio1\"]')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"radio\" value=\"radio1\" name=\"radioButton\" class=\"radioButton\"/>\u001b[22m\n\n\n\u001b[0m \u001b[90m 58 |\u001b[39m\n \u001b[90m 59 |\u001b[39m       \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 60 |\u001b[39m       \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[value=\"radio1\"]'\u001b[39m)\u001b[33m.\u001b[39muncheck()\n \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 61 |\u001b[39m\n \u001b[90m 62 |\u001b[39m\n \u001b[90m 63 |\u001b[39m })\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\wwe\\checkboxex2.spec.js:60:51\u001b[22m"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-06-15T03:59:32.623Z",
+                  "timeout": 30000,
                   "annotations": [],
-                  "attachments": [
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-checkboxex2-Verify-Radio-button-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-checkboxex2-Verify-Radio-button-chromium\\error-context.md"
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30536,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "D:\\LearnPlaywrightB36\\tests\\wwe\\iframes.spec.js",
+                            "column": 58,
+                            "line": 7
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[@for=\"checkbox-1\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://jqueryui.com/checkboxradio/'\u001b[39m)\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//label[@for=\"checkbox-1\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m     })\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\wwe\\iframes.spec.js:7:58\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-06-17T04:19:00.170Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-iframes-Automation---W-be496-ements-Working-with-Iframes-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-iframes-Automation---W-be496-ements-Working-with-Iframes-chromium\\error-context.md"
+                        }
+                      ]
                     }
                   ],
-                  "errorLocation": {
-                    "file": "D:\\LearnPlaywrightB36\\tests\\wwe\\checkboxex2.spec.js",
-                    "column": 51,
-                    "line": 60
-                  }
+                  "status": "unexpected"
                 }
               ],
-              "status": "unexpected"
+              "id": "514f2930a39cc9732398-3600de6b40ce1cbf8ea9",
+              "file": "wwe/iframes.spec.js",
+              "line": 4,
+              "column": 5
             }
-          ],
-          "id": "891f6cacac5a1f1a78be-8579d730ca028d4719dd",
-          "file": "wwe/checkboxex2.spec.js",
-          "line": 52,
-          "column": 5
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-15T03:59:29.226Z",
-    "duration": 15034.53799999971,
+    "startTime": "2026-06-17T04:18:56.227Z",
+    "duration": 34817.16399999987,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,
