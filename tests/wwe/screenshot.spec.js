@@ -6,7 +6,7 @@ test('page screenshot', async ({ page }) => {
     await page.waitForTimeout(3000)
     //await page.screenshot({ path: 'tests/screenshots/HomePage.png' })
 
-    await page.screenshot({ path:'tests/screenshots/'+Date.now()+'HomePage.png'})
+    await page.screenshot({ path:'tests/screenshots/'+Date.now()+'HomePage.png', fullPage: true})
 });
 
 test('page element screenshot 2 ', async ({ page }) => {
@@ -34,4 +34,6 @@ test('Element screenshot Example 2 ', async ({ page }) => {
     await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
     await page.waitForTimeout(3000)
     await page.locator('//input[@name="username"]/..').screenshot({ path: 'tests/screenshots/' + Date.now() + 'username.png' })
+
+    await page.locator('//input[@name="password"]/..').screenshot({ path: 'tests/screenshots/' + Date.now() + 'username.png' })
 });

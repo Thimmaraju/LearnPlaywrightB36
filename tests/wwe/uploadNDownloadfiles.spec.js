@@ -1,6 +1,7 @@
 const { browser, test, expect } = require('@playwright/test');
 const fs = require('fs')
 const path = require('path');
+
 test.describe('Automation - Working With Elements', () => {
 
     test('Playwright Test Case - upload file', async ({ page }) => {
@@ -41,12 +42,12 @@ test.describe('Automation - Working With Elements', () => {
         await page.locator('input[type="file"]').setInputFiles(['testdata/uploadfiles/download.gif', 'testdata/uploadfiles/images.png', 'testdata/uploadfiles/samplejpg.jpg'])
 
 
-    //    const  filenames = ['SDLC.png', 'Spiral-Model-Methodology.png', 'Xpath+vs+CSS.pdf']
+        //    const  filenames = ['SDLC.png', 'Spiral-Model-Methodology.png', 'Xpath+vs+CSS.pdf']
 
-    //     for( const file of filenames ){
+        //     for( const file of filenames ){
 
-    //     await expect(page.locator(`//p[text()='${file}']`)).toBeVisible()
-    //     }
+        //     await expect(page.locator(`//p[text()='${file}']`)).toBeVisible()
+        //     }
 
         await page.waitForTimeout(5000)
 
@@ -59,7 +60,7 @@ test.describe('Automation - Working With Elements', () => {
 
         const [download] = await Promise.all([
             page.waitForEvent('download'),
-            page.locator('//a[@href="download/TestLeaf Logo.png"]').click()
+            page.locator('a[href="download/Image.PNG"]').click()
         ]);
 
         const suggestedFileName = download.suggestedFilename()
@@ -95,7 +96,7 @@ test.describe('Automation - Working With Elements', () => {
     test('Direct Download and assert', async ({ page }) => {
 
         // Define the image URL
-        const imageUrl = 'https://i.ytimg.com/vi/UI7v_qrk-GA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDl7d7ROstzrQz-Puh-AA7aMCEz8w';
+        const imageUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSI1kH31DkEXCFtTCDm7rdhYY5YRNnxvnlnMQS_wvfKN8W5Ej18uOaivWj9a6bCjlM9HQwbFcBh5Td7RSE_n4niUn6OBaBozvNM6KDJ4U&s=10';
 
         // Fetch the image using Playwright's request API
         const response = await page.request.get(imageUrl);
@@ -113,13 +114,22 @@ test.describe('Automation - Working With Elements', () => {
             }
 
             // Define the file name and path to save the image inside the 'downloads' folder
-            const savePath = path.join(downloadsFolder, 'gas.jpg');
+            const savePath = path.join(downloadsFolder, 'elephant.jpg');
 
             // Write the buffer to a file
             fs.writeFileSync(savePath, buffer);
             console.log(`Image downloaded successfully and saved to ${savePath}`);
-        } else {
-            console.log(`Failed to download the image. Status code: ${response.status()}`);
+            if (fs.existsSync(downloadsFolder)) {
+                fs.rmSync(downloadsFolder, {
+                    recursive: true,
+                    force: true
+                });
+                console.log('Downloads folder cleaned up');
+            } else {
+                console.log(`Failed to download the image. Status code: ${response.status()}`);
+            }
+
+
         }
     })
 

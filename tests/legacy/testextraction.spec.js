@@ -6,14 +6,14 @@ test('Verify Login with Valid credentials', async ({ page }) => {
     await page.goto('/web/index.php/auth/login');
 
     console.log('Step 2: Extract username text');
-    const usernametext = await page.locator('(//p[@class="oxd-text oxd-text--p"])[1]').textContent()  // "Username : Admin"
+    const usernametext = await page.locator('(//p[@class="oxd-text oxd-text--p"])[1]').innerText()  // "Username : Admin"
     console.log('Username text:', usernametext);
 
     const usernamearr = usernametext.split(" ") //["Username", ":", "Admin"]
     console.log('Parsed username array:', usernamearr);
 
     console.log('Step 3: Extract password text');
-    const passwordtext = await page.locator('(//p[@class="oxd-text oxd-text--p"])[2]').textContent()
+    const passwordtext = await page.locator('(//p[@class="oxd-text oxd-text--p"])[2]').innerText()
     console.log('Password text:', passwordtext);
 
     const passwordarr = passwordtext.split(" ") //["Password", ":", "admin123"]

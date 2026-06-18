@@ -9,3 +9,4 @@ node_modules/
 .playwright-mcp/
 package-lock.json
 preprod.playwright.config.js
+tests/screenshots

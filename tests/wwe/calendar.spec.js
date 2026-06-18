@@ -20,9 +20,9 @@ test.describe('Calendar Feature', () => {
 
         // console.log(date)
 
-        await page.locator('(//div[@class="oxd-date-input"]/input)[1]').fill('01-01-2025');
+        await page.locator('(//div[@class="oxd-date-input"]/input)[1]').fill('2026-23-06');
 
-        await page.locator('(//div[@class="oxd-date-input"]/input)[2]').fill('01-08-2026')
+        await page.locator('(//div[@class="oxd-date-input"]/input)[2]').fill('2026-24-06')
     });
 
 

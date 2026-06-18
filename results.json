@@ -63,25 +63,22 @@
   },
   "suites": [
     {
-      "title": "wwe\\iframes.spec.js",
-      "file": "wwe/iframes.spec.js",
+      "title": "wwe\\newcontext.spec.js",
+      "file": "wwe/newcontext.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Automation - Working With Elements",
-          "file": "wwe/iframes.spec.js",
-          "line": 2,
+          "file": "wwe/newcontext.spec.js",
+          "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "Working with Iframes",
-              "ok": false,
-              "tags": [
-                "smoke",
-                "raju"
-              ],
+              "title": "browse context test",
+              "ok": true,
+              "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
@@ -91,53 +88,37 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 12,
                       "parallelIndex": 0,
-                      "status": "timedOut",
-                      "duration": 30536,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "D:\\LearnPlaywrightB36\\tests\\wwe\\iframes.spec.js",
-                            "column": 58,
-                            "line": 7
-                          },
-                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('//label[@for=\"checkbox-1\"]')\u001b[22m\n\n\n\u001b[0m \u001b[90m  5 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://jqueryui.com/checkboxradio/'\u001b[39m)\n \u001b[90m  6 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'//label[@for=\"checkbox-1\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\n \u001b[90m    |\u001b[39m                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m     })\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[2m    at D:\\LearnPlaywrightB36\\tests\\wwe\\iframes.spec.js:7:58\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 17143,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-06-17T04:19:00.170Z",
+                      "startTime": "2026-06-18T04:25:13.544Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-iframes-Automation---W-be496-ements-Working-with-Iframes-chromium\\test-failed-1.png"
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-newcontext-Automation--1ffc8-lements-browse-context-test-chromium\\test-finished-2.png"
                         },
                         {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-iframes-Automation---W-be496-ements-Working-with-Iframes-chromium\\error-context.md"
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-newcontext-Automation--1ffc8-lements-browse-context-test-chromium\\test-finished-1.png"
                         }
                       ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
-              "id": "514f2930a39cc9732398-3600de6b40ce1cbf8ea9",
-              "file": "wwe/iframes.spec.js",
-              "line": 4,
-              "column": 5
+              "id": "ce30e3858b30eb43785f-142707e633936c0bae93",
+              "file": "wwe/newcontext.spec.js",
+              "line": 5,
+              "column": 3
             }
           ]
         }
@@ -146,11 +127,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-17T04:18:56.227Z",
-    "duration": 34817.16399999987,
-    "expected": 0,
+    "startTime": "2026-06-18T04:25:09.852Z",
+    "duration": 23122.518999999855,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
