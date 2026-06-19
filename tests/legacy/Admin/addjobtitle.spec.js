@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
-import logindata from "../../testdata/login.json"
+
 import { faker } from '@faker-js/faker';
-import { pressKey } from '../../Utils/utilities';
 
 test('Verify add jobtitle',{tag: "@smoke"}, async ({ page }) => {
 

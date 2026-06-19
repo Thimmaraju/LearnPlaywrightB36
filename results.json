@@ -22,8 +22,40 @@
         "metadata": {
           "actualWorkers": 1
         },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "D:/LearnPlaywrightB36/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.js/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/LearnPlaywrightB36/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
         "id": "chromium",
         "name": "chromium",
+        "testDir": "D:/LearnPlaywrightB36/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/LearnPlaywrightB36/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Google Chrome",
+        "name": "Google Chrome",
         "testDir": "D:/LearnPlaywrightB36/tests",
         "testIgnore": [],
         "testMatch": [
@@ -63,73 +95,187 @@
   },
   "suites": [
     {
-      "title": "wwe\\newcontext.spec.js",
-      "file": "wwe/newcontext.spec.js",
+      "title": "login.setup.js",
+      "file": "login.setup.js",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Automation - Working With Elements",
-          "file": "wwe/newcontext.spec.js",
-          "line": 3,
-          "column": 6,
-          "specs": [
+          "title": "authentication",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "browse context test",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
                 {
-                  "timeout": 30000,
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9047,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-19T03:14:05.050Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 12,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 17143,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-06-18T04:25:13.544Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-newcontext-Automation--1ffc8-lements-browse-context-test-chromium\\test-finished-2.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\LearnPlaywrightB36\\test-results\\wwe-newcontext-Automation--1ffc8-lements-browse-context-test-chromium\\test-finished-1.png"
-                        }
-                      ]
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\login.setup.js-authentication-setup\\test-finished-1.png"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "id": "ce30e3858b30eb43785f-142707e633936c0bae93",
-              "file": "wwe/newcontext.spec.js",
-              "line": 5,
-              "column": 3
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "3ef016cc2fd2715a8e9b-8a50c44886b0aa61c824",
+          "file": "login.setup.js",
+          "line": 4,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "testwithoutlogin.spec.js",
+      "file": "testwithoutlogin.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Verify Add Employee ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12400,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-19T03:14:19.372Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\testwithoutlogin-Verify-Add-Employee--Google-Chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4cd34ac8847e4a48a67d-93ccaaa74f821436be38",
+          "file": "testwithoutlogin.spec.js",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Add job title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8581,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-19T03:14:31.896Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\testwithoutlogin-Add-job-title-Google-Chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4cd34ac8847e4a48a67d-57357d92cdf0d1b83dd6",
+          "file": "testwithoutlogin.spec.js",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Add Buzz Post ",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Google Chrome",
+              "projectName": "Google Chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4562,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-06-19T03:14:40.566Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\LearnPlaywrightB36\\test-results\\testwithoutlogin-Add-Buzz-Post--Google-Chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4cd34ac8847e4a48a67d-ab209ed4e4030fa73b4d",
+          "file": "testwithoutlogin.spec.js",
+          "line": 36,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-18T04:25:09.852Z",
-    "duration": 23122.518999999855,
-    "expected": 1,
+    "startTime": "2026-06-19T03:13:59.893Z",
+    "duration": 45611.94800000003,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
