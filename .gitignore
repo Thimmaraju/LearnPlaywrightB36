@@ -12,4 +12,4 @@ preprod.playwright.config.js
 tests/screenshots
 allure-report
 allure-results
-.auth 
+.auth
